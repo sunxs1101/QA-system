@@ -33,6 +33,11 @@ https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/rnn/pyth
 https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/learn/python/learn/models.py 两个BiRNN实现。论文中cell用的是GRU，而这两个里面都是调用static_rnn()。
 
  - get_rnn_model()参数中有cell_type和bidirectional的定义，cell_type包括rnn，gru和lstm，bidirectional是boolean，这个调用bidirectional_rnn来实现。这里采用这个方法来实现基于GRU的双向rnn
+ - BiRNN+state+one-hot
+  1. BiRNN 
+  
+  <!-- ![BiLSTM](images/illustration.png "Title" {width=40px height=400px}) -->
+<img src="https://github.com/hycis/bidirectional_RNN/blob/master/item_lstm.png" height="250">
  
 ## 参考文献
  - [Bahdanau et al.2015] Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. 2015. [Neural machine translation by jointly learning to align and translate](https://arxiv.org/pdf/1409.0473v7.pdf).
